@@ -14,7 +14,7 @@ Previously, I interned at [CloudKitchens](https://cloudkitchens.com) and before 
 
 My favourite programming language is Rust. I also enjoy GPU programming.
 
-### Projects
+## Projects
 
 Optimizing Compiler — C0 (subset of C) to LLVM and x86-64 in Rust; SSA, dataflow analysis, register allocation, SCCP, ADCE, inlining.
 
