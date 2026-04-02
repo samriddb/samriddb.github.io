@@ -27,3 +27,6 @@ CarnegieGPT — CMU resource retrieval system; won best campus experience at Tar
 ## Personal
 
 I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded by a lot of cats :). I play for the table tennis team at CMU, and like reading, mostly theology and philosophy.
+
+---
+*Made with [Zola](https://www.getzola.org/).*
