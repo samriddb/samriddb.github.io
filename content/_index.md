@@ -5,7 +5,7 @@ template = "index.html"
 
 <!-- <img class="photo" src="/photo.jpg" alt="Samriddhi Bhardwaj" /> -->
 
-Hi! I'm **Samriddhi Bhardwaj**, a junior Computer Science student at Carnegie Mellon University. I like systems, theory and ML. My favorite classes at CMU have been compilers, parallel computing, theory of computation, database systems, and linguistics. 
+Hi! I'm Samriddhi, a junior Computer Science student at Carnegie Mellon University. I like systems, theory and ML. My favorite classes at CMU have been compilers, parallel computing, theory of computation, database systems, and linguistics. 
 
 You can reach me at samriddb [at] cmu [dot] edu.
 ## Bio 
