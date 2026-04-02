@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samriddhi</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      max-width: 760px;
+      margin: 60px auto;
+      padding: 0 2rem;
+      font-size: 17px;
+      line-height: 1.75;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+
+    header .pronunciation {
+      font-size: 0.85rem;
+      color: #888;
+      font-style: italic;
+      margin-top: 0.3rem;
+    }
+
+    header nav {
+      padding-top: 0.4rem;
+      font-size: 0.95rem;
+    }
+
+    header nav a {
+      color: #555;
+      text-decoration: none;
+      margin-left: 1.5rem;
+    }
+
+    header nav a:hover { color: #222; }
+
+    .photo {
+      float: left;
+      margin: 0.25rem 2rem 1rem 0;
+      width: 220px;
+      border-radius: 4px;
+    }
+
+    a { color: #4a7ab5; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    p { margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Samriddhi<br>Bhardwaj</h1>
+      <div class="pronunciation">/sʌm.rɪd.iː bʱʌr.d̪.vɑːdʒ/</div>
+      <!-- <div class="pronunciation">suhm-RID-hee bhar-DWAJ &nbsp;·&nbsp; /sʌm.rɪd.iː bɑːrd.wɑːdʒ/</div> -->
+       <!-- <div class="pronunciation">sʌm.rɪd.iː bʱʌr.d̪.vɑːdʒ &nbsp;·&nbsp; sum-RID-ee BHA-rud-vaaj</div> -->
+    </div>
+    <nav>
+      <a href="/">About</a>
+      <!-- <a href="/beyond">Beyond</a> -->
+      <!-- <a href="mailto:samriddb@cmu.edu">Email</a> -->
+      <a href="https://linkedin.com/in/samriddhi-bhardwaj">LinkedIn</a>
+    </nav>
+  </header>
+
+  {% block content %}{% endblock %}
+</body>
+</html>
