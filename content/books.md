@@ -19,7 +19,7 @@ Some cool books:
 
 Some cool reads:
 
-- [Pleasures](https://www.aldoushuxley.org/Pleasures.htm) by Aldous Huxley: An essay on the nature of pleasure and human experience.
+- [Pleasures](https://hackneybooks.co.uk/books/364/686/Pleasures.html) by Aldous Huxley: An essay on the nature of pleasure and human experience.
 - [Why stories matter](https://www.joanwestenberg.com/p/why-stories-make-you-smarter-than-self-help-books) by Joan Westenberg
 - [Style](https://stephango.com/style) by Steph Ango
 - [The Law of Leaky Abstractions](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/) by Joel Spolsky
