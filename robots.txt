@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://samriddhibhardwaj.com/sitemap.xml
+Sitemap: https://sbhardwaj.com/sitemap.xml
