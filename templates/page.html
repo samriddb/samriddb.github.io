@@ -1,4 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
+  <header>
+    <div>
+      <h1>{{ page.title }}</h1>
+    </div>
+    <nav>
+      <a href="/">About</a>
+      <a href="/books/">Reading</a>
+      <a href="https://linkedin.com/in/samriddhi-bhardwaj">LinkedIn</a>
+      <button onclick="toggleTheme()" id="theme-btn">🌙</button>
+    </nav>
+  </header>
   {{ page.content | safe }}
 {% endblock %}

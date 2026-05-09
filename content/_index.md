@@ -18,7 +18,7 @@ My favourite programming language is Rust. I also enjoy GPU programming.
 
 Optimizing Compiler — C0 (subset of C) to LLVM and x86-64 in Rust; SSA, dataflow analysis, register allocation, SCCP, ADCE, inlining.
 
-[Sequence-to-Graph Aligner](https://samriddb.github.io/s2g-aligner) — CUDA-accelerated DNA aligner. C++, CUDA.
+[Sequence-to-Graph Aligner](/s2g-aligner-paper.pdf) — CUDA-accelerated DNA aligner. C++, CUDA.
 
 Needle — PyTorch-like autodiff library with GPU acceleration and graph optimizations. Python, C++, CUDA.
 
@@ -26,7 +26,11 @@ CarnegieGPT — CMU resource retrieval system; won best campus experience at Tar
 
 ## Personal
 
-I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded by a lot of cats :). I play for the table tennis team at CMU, and like reading, especially theology and philosophy.
+I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded by a lot of cats :). I play for the table tennis team at CMU, and love reading, especially theology and philosophy. [This page](./books) contains some of my favourite reads.
+
+
+Here's a list of things I want to learn about more (in no particular order): computer architecture, combinatorics, set theory, evolution, computational biology, information theory, linguistics, and gen AI theory.
+
 
 ---
 *Made with [Zola](https://www.getzola.org/).*

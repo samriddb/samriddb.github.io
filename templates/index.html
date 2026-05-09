@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
+  <header>
+    <div>
+      <h1>Samriddhi<br>Bhardwaj</h1>
+      <div class="pronunciation">/sʌm.rɪd.iː bʱʌr.d̪.vɑːdʒ/</div>
+    </div>
+    <nav>
+      <a href="/">About</a>
+      <a href="/books/">Reading</a>
+      <a href="https://linkedin.com/in/samriddhi-bhardwaj">LinkedIn</a>
+      <button onclick="toggleTheme()" id="theme-btn">🌙</button>
+    </nav>
+  </header>
 <main>
   {{ section.content | safe }}
 </main>
