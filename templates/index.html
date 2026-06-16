@@ -7,13 +7,15 @@
       <div class="pronunciation">/sʌm.rɪd.iː bʱʌr.d̪.vɑːdʒ/</div>
     </div>
     <nav>
-      <a href="/">About</a>
-      <a href="/books/">Reading</a>
-      <a href="https://linkedin.com/in/samriddhi-bhardwaj">LinkedIn</a>
-      <button onclick="toggleTheme()" id="theme-btn">🌙</button>
+      <a href="/" class="active">About</a>
+      <a href="/blog/">Blog</a>
+      <a href="/resume.pdf">Resume</a>
     </nav>
   </header>
-<main>
-  {{ section.content | safe }}
-</main>
+  <main>
+    {{ section.content | safe }}
+  </main>
+  <footer>
+    Made with <a href="https://www.getzola.org/">Zola</a>.
+  </footer>
 {% endblock %}

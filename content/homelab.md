@@ -1,0 +1,18 @@
++++
+title = "Now Self-Hosting"
+template = "page.html"
++++
+
+This page is where the live parts of this site will eventually live — proof-of-work for the homelab, not just a description of it.
+
+<div class="chip"><span class="dot dot-off"></span>live status: not wired up yet</div>
+
+## Planned
+
+- A "ping my homelab" button showing live round-trip latency
+- A sandbox that runs small snippets through my own [C0 → LLVM/x86-64 compiler](/blog/optimizing-compiler/) and streams back the output
+- Real status from whatever I'm actually self-hosting, with a graceful fallback if the homelab is offline
+
+## Setup
+
+*Coming soon — architecture diagram and a list of what's actually running.*

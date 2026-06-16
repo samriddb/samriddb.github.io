@@ -4,6 +4,7 @@
   <header>
     <div>
       <h1>{{ page.title }}</h1>
+      <p class="meta">{{ page.date | date(format="%Y-%m-%d") }}</p>
     </div>
     <nav>
       <a href="/">About</a>
@@ -11,7 +12,17 @@
       <a href="/resume.pdf">Resume</a>
     </nav>
   </header>
+
+  {% if page.taxonomies.tags %}
+  <div class="tags" style="margin-bottom: 24px;">
+    {% for t in page.taxonomies.tags %}<a class="tag" href="/tags/{{ t }}/">{{ t }}</a>{% endfor %}
+  </div>
+  {% endif %}
+
   {{ page.content | safe }}
+
+  <p style="margin-top: 40px;"><a href="/blog/">← back to blog</a></p>
+
   <footer>
     Made with <a href="https://www.getzola.org/">Zola</a>.
   </footer>

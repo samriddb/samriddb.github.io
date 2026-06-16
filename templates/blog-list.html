@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Blog · Samriddhi Bhardwaj{% endblock title %}
+{% block content %}
+  <header>
+    <div>
+      <h1>Blog</h1>
+    </div>
+    <nav>
+      <a href="/">About</a>
+      <a href="/blog/" class="active">Blog</a>
+      <a href="/resume.pdf">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    {% set tags = get_taxonomy(kind="tags") %}
+    <div class="tag-filter">
+      <button class="tag-pill active" onclick="filterByTag('all', this)">all</button>
+      {% for term in tags.items %}
+        <button class="tag-pill" onclick="filterByTag('{{ term.name }}', this)">#{{ term.name }}</button>
+      {% endfor %}
+    </div>
+
+    <div id="post-list">
+      {% for page in section.pages %}
+        <div class="card" data-tags="{% if page.taxonomies.tags %}{% for t in page.taxonomies.tags %}{{ t }},{% endfor %}{% endif %}">
+          <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+          <p class="meta">{{ page.date | date(format="%Y-%m-%d") }}</p>
+          {% if page.summary %}<p>{{ page.summary | safe }}</p>{% endif %}
+          {% if page.taxonomies.tags %}
+          <div class="tags">
+            {% for t in page.taxonomies.tags %}<a class="tag" href="/tags/{{ t }}/">{{ t }}</a>{% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </main>
+
+  <footer>
+    Made with <a href="https://www.getzola.org/">Zola</a>.
+  </footer>
+
+  <style>
+    .tag-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+    .tag-pill {
+      font-family: 'JetBrains Mono', monospace; font-size: 12px;
+      background: var(--bg-elevated); border: 1px solid var(--border);
+      color: var(--text-dim); padding: 5px 12px; border-radius: 999px;
+      cursor: pointer;
+    }
+    .tag-pill.active { color: var(--accent); border-color: var(--accent); }
+  </style>
+
+  <script>
+    function filterByTag(tag, btn) {
+      document.querySelectorAll('.tag-pill').forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('#post-list .card').forEach(card => {
+        const cardTags = card.dataset.tags.split(',').filter(Boolean);
+        card.style.display = (tag === 'all' || cardTags.includes(tag)) ? '' : 'none';
+      });
+    }
+  </script>
+{% endblock %}
