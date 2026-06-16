@@ -24,7 +24,3 @@ I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded
 
 
 Here's a list of things I want to learn about more (in no particular order): computer architecture, combinatorics, set theory, evolution, computational biology, information theory, linguistics, and gen AI theory.
-
-
----
-*Made with [Zola](https://www.getzola.org/).*
