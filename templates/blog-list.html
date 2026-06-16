@@ -24,7 +24,7 @@
       {% for page in section.pages %}
         <div class="card" data-tags="{% if page.taxonomies.tags %}{% for t in page.taxonomies.tags %}{{ t }},{% endfor %}{% endif %}">
           <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
-          <p class="meta">{{ page.date | date(format="%Y-%m-%d") }}</p>
+          {% if not page.extra.no_date %}<p class="meta">{{ page.date | date(format="%Y-%m-%d") }}</p>{% endif %}
           {% if page.summary %}<p>{{ page.summary | safe }}</p>{% endif %}
           {% if page.taxonomies.tags %}
           <div class="tags">

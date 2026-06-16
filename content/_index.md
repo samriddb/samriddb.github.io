@@ -16,7 +16,13 @@ My favourite programming language is Rust. I also enjoy GPU programming.
 
 ## Projects
 
-I write about what I build as I build it — see the [blog](/blog/).
+**Optimizing Compiler** — C0 (subset of C) to LLVM and x86-64 in Rust; SSA, dataflow analysis, register allocation, SCCP, ADCE, inlining.
+
+**[Sequence-to-Graph Aligner](/s2g-aligner-paper.pdf)** — CUDA-accelerated DNA aligner. C++, CUDA.
+
+**Needle** — PyTorch-like autodiff library with GPU acceleration and graph optimizations. Python, C++, CUDA.
+
+**CarnegieGPT** — CMU resource retrieval system; won best campus experience at TartanHacks 2024. Python.
 
 ## Personal
 
