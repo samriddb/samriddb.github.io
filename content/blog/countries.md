@@ -1,6 +1,9 @@
 +++
 title = "Countries"
 date = 2026-06-17
+
+[extra]
+no_date = true
 +++
 
 # People watching, by country
@@ -11,8 +14,7 @@ The best part of meeting people from different cultures is noticing the smaller 
 
 Based on vibes, ymmv.
 
-<details>
-<summary>**USA**</summary>
+## **USA**
 
 - Taking fall fun seriously (apple picking, pumpkin spice lattes, etc)
 - Hydration consciousness: people carry their water bottles everywhere and pay a lot for them.
@@ -30,28 +32,19 @@ Based on vibes, ymmv.
 - Diners. Going to IHOP is a tourist experience of its own. (If you're in Pittsburgh, Pamela's is a must — [Obama agrees](https://www.post-gazette.com/news/early-returnsmenulink/2008/04/22/obama-takes-a-liking-to-pamela-s-pancakes/stories/200804220235).)
 - Rock music from here feels very optimistic
 
-</details>
-
-<details>
-<summary>**UK**</summary>
+## **UK**
 
 - Rock music from here is witty, dry, sarcastic, and/or depressing. Think: Radiohead/Arctic Monkeys/The Smiths vs Bruce Springsteen, The Eagles, Fleetwood Mac. Of course there are exceptions (hi My Chemical Romance and all of 2010s emo music). I conjecture this might also have to do with weather
 - British humor feels sharp, dry, witty and sarcastic.
 
-</details>
-
-<details>
-<summary>**India**</summary>
+## **India**
 
 - I always remember this quote from Malgudi Days by R. K. Narayan - "In India, you just look out of the window and there is a story." Walking through Indian streets is an experience of its own.
 - Crossing the road is war
 - A lot of people's holidays in the year are planned around weddings they need to attend all over the country
 - juggad. This is pretty talked about but worth mentioning. It's the instinct to find workarounds for things.
 
-</details>
-
-<details>
-<summary>**Qatar/UAE/Kuwait/Most of GCC**</summary>
+## **Qatar/UAE/Kuwait/Most of GCC**
 
 - Outdoor ACs
 - Friday/Saturday weekend. Growing up in this environment disoriented my sense of the week when I came to the U.S.
@@ -63,18 +56,10 @@ Based on vibes, ymmv.
 - Living a completely new life during Ramadan.
 - Every other family you know has adopted a street cat
 
-</details>
-
-<details>
-<summary>**Turkey**</summary>
+## **Turkey**
 
 - The most beautiful cats.
 
-</details>
-
-<details>
-<summary>**Russia**</summary>
+## **Russia**
 
 - Superstitions
-
-</details>

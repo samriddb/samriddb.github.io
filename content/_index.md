@@ -26,7 +26,7 @@ My favourite programming language is Rust. I also enjoy GPU programming.
 
 ## Personal
 
-I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded by a lot of cats :). I play for the table tennis team at CMU, and love reading, especially theology and philosophy. [This page](./books) contains some of my favourite reads, and [this one](./beyond) has more about life outside of CS.
+I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded by a lot of cats :). I play for the table tennis team at CMU, and love reading, especially theology and philosophy. [This page](./books) contains some of my favourite reads.
 
 
 Here's a list of things I want to learn about more (in no particular order): computer architecture, combinatorics, set theory, evolution, computational biology, information theory, linguistics, and gen AI theory.
