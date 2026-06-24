@@ -8,14 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #faf6ee;
-      --bg-elevated: #f3ecdd;
-      --text: #2b2722;
-      --text-dim: #7a7264;
-      --accent: #b1502e;
+      --bg: #f8f7f3;
+      --bg-elevated: #f1eeea;
+      --text: #1a2818;
+      --text-dim: #607058;
+      --accent: #8c3050;
       --status-on: #5a7d4f;
-      --status-off: #b1502e;
-      --border: #e2d8c4;
+      --status-off: #8c3050;
+      --border: #e2dcd4;
     }
 
     * { box-sizing: border-box; }
@@ -81,6 +81,7 @@
       font-size: 1.3rem;
       font-weight: 600;
       margin: 1.75rem 0 0.6rem;
+      position: relative;
     }
 
     h2:first-of-type { margin-top: 0.5rem; }
@@ -122,7 +123,9 @@
     .card h3 { margin: 0 0 6px; font-family: 'Source Serif 4', serif; font-size: 20px; font-weight: 600; }
     .card h3 a { color: var(--text); }
     .card h3 a:hover { color: var(--accent); }
-    .card p { margin: 0 0 12px; color: var(--text-dim); font-size: 15px; }
+    .card p { margin: 0 0 8px; color: var(--text-dim); font-size: 15px; }
+    .card p:last-child { margin-bottom: 0; }
+    .card .tags { margin-top: 6px; }
 
     footer {
       margin-top: 64px;
@@ -136,6 +139,20 @@
       header { flex-direction: column; gap: 0.5rem; }
       nav { padding-top: 0; flex-wrap: wrap; }
     }
+
+    .heading-anchor {
+      position: absolute;
+      left: -0.9em;
+      top: 0;
+      visibility: hidden;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 1em;
+    }
+    h1:hover .heading-anchor,
+    h2:hover .heading-anchor,
+    h3:hover .heading-anchor { visibility: visible; }
   </style>
 </head>
 <body>
@@ -176,5 +193,20 @@
   </footer>
 
   </div>
+  <script>
+    document.querySelectorAll('h1[id], h2[id], h3[id]').forEach(h => {
+      const a = document.createElement('a');
+      a.className = 'heading-anchor';
+      a.href = '#' + h.id;
+      a.textContent = '#';
+      h.prepend(a);
+      h.style.cursor = 'pointer';
+      h.addEventListener('click', e => {
+        if (e.target === a) return;
+        window.location.hash = h.id;
+        navigator.clipboard.writeText(window.location.href).catch(() => {});
+      });
+    });
+  </script>
 </body>
 </html>
