@@ -1,18 +1,25 @@
 +++
-title = "Samriddhi Bhardwaj"
+title = "Samriddhi"
 template = "index.html"
 +++
 
 <!-- <img class="photo" src="/photo.jpg" alt="Samriddhi Bhardwaj" /> -->
 
-Hi! I'm Samriddhi, a junior Computer Science student at Carnegie Mellon University. I like systems, theory and ML. My favorite classes at CMU have been compilers, parallel computing, theory of computation, database systems, and linguistics. 
+Hi! I'm Samriddhi, a Computer Science student at Carnegie Mellon University. I like systems, theory and ML.
 
-You can reach me at samriddb [at] cmu [dot] edu.
+You can reach me at my first name [dot] my last name [dot] gmail.com.
+
 ## Bio 
 
-Previously, I interned at [CloudKitchens](https://cloudkitchens.com) and before that, I was a research intern at the [Qatar Computing Research Institute](https://www.hbku.edu.qa/en/qcri). I was also a TA for 15-122, the data structures and algorithms class at CMU and research assistant at HCII, CMU. 
+Previously, I was a Member of Technical Staff intern (2x) at [Atoms](https://atoms.co/)/[Lab37](https://www.lab37.us/) where I worked on an assembly line robot. I learned so so much here, met so many cool people, and realized how to actually take care of a codebase (which was immensly helpful when I took [compilers](https://www.cs.cmu.edu/afs/cs/academic/class/15411-s26/www/) a following semester).
 
-My favourite programming language is Rust. I also enjoy GPU programming.
+Before that, I was a research intern at the [Qatar Computing Research Institute](https://www.hbku.edu.qa/en/qcri) where I worked with the amazing [Mohammad Shahmeer](https://www.linkedin.com/in/shahmeer99) on converting human-centric data (like unstructed pdfs) into actionable knowledge.
+
+I also served as a Teaching Assistant for the data structures and algorithms class at CMU ([15-122](https://www.cs.cmu.edu/~15122-archive/s25/about.shtml)) which was an incredibly meaningful experience and as a research assistant at [Kittur Lab](https://kittur.org/), Human-Computer Interaction Institute. 
+
+My favourite programming language is Rust 🦀. I also really enjoy GPU programming. My favorite classes at CMU have been compilers, parallel computing, theory of computation, database systems, and linguistics. 
+
+Here's a list of things I want to learn about more (in no particular order): computational biology, computer architecture, combinatorics, set theory, evolution, information theory, linguistics, and gen AI theory.
 
 ## Projects
 
@@ -27,6 +34,3 @@ My favourite programming language is Rust. I also enjoy GPU programming.
 ## Personal
 
 I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded by a lot of cats :). I play for the table tennis team at CMU, and love reading, especially theology and philosophy. [This page](./books) contains some of my favourite reads.
-
-
-Here's a list of things I want to learn about more (in no particular order): computer architecture, combinatorics, set theory, evolution, computational biology, information theory, linguistics, and gen AI theory.
