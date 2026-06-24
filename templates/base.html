@@ -142,12 +142,13 @@
 
     .heading-anchor {
       position: absolute;
-      left: -1.2em;
+      left: -0.9em;
+      top: 0;
       visibility: hidden;
       color: var(--text-dim);
       text-decoration: none;
       font-weight: normal;
-      font-size: 0.85em;
+      font-size: 1em;
     }
     h1:hover .heading-anchor,
     h2:hover .heading-anchor,
@@ -165,6 +166,12 @@
       a.href = '#' + h.id;
       a.textContent = '#';
       h.prepend(a);
+      h.style.cursor = 'pointer';
+      h.addEventListener('click', e => {
+        if (e.target === a) return;
+        window.location.hash = h.id;
+        navigator.clipboard.writeText(window.location.href).catch(() => {});
+      });
     });
   </script>
 </body>
