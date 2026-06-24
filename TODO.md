@@ -7,6 +7,8 @@
 - [ ] SEO
 - [ ] Add your notes
 - [ ] Add reads
+- [ ] college admissions
+- [ ] how to have a soul
 
 ### Blog Ideas
 - [ ] something music
