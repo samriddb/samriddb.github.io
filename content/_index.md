@@ -11,7 +11,7 @@ You can reach me at my first name [dot] my last name [dot] gmail.com.
 
 ## Bio 
 
-Previously, I was a Member of Technical Staff intern (2x) at [Atoms](https://atoms.co/)/[Lab37](https://www.lab37.us/) where I worked on an assembly line robot. I learned so so much here, met so many cool people, and realized how to actually take care of a codebase (which was immensly helpful when I took [compilers](https://www.cs.cmu.edu/afs/cs/academic/class/15411-s26/www/) a following semester).
+Previously, I was a Member of Technical Staff intern (2x) at [Atoms](https://atoms.co/)/[Lab37](https://www.lab37.us/) where I worked on an assembly line robot. Check out [bowl builder](https://www.lab37.us/video-players/bowlbuilder-home)!
 
 Before that, I was a research intern at the [Qatar Computing Research Institute](https://www.hbku.edu.qa/en/qcri) where I worked with the amazing [Mohammad Shahmeer](https://www.linkedin.com/in/shahmeer99) on converting human-centric data (like unstructed pdfs) into actionable knowledge.
 

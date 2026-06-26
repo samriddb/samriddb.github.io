@@ -11,5 +11,6 @@
 - [ ] how to have a soul
 
 ### Blog Ideas
-- [ ] something music
+- [ ] something music - radiohead paranoid android
 - [ ] cmu courses and thoughts
+- [ ] bilingualh
