@@ -1,6 +1,6 @@
 +++
 title = "What do you want out of your work"
-<!-- date = 2026-06-24 -->
+# date = 2026-06-24
 draft = true
 no_title = true
 +++
