@@ -7,13 +7,13 @@ template = "index.html"
 
 Hi! I'm Samriddhi, a Computer Science student at Carnegie Mellon University. I like systems, theory and ML.
 
-You can reach me at my first name [dot] my last name [dot] gmail.com.
+You can reach me at hello [at] sbhardwaj [dot] com.
 
 ## Bio 
 
-Previously, I was a Member of Technical Staff intern (2x) at [Atoms](https://atoms.co/)/[Lab37](https://www.lab37.us/) where I worked on an assembly line robot. Check out [bowl builder](https://www.lab37.us/video-players/bowlbuilder-home)!
+Previously, I was a Member of Technical Staff intern (2x) at [Atoms](https://atoms.co/)/[Lab37](https://www.lab37.us/) where I worked on robot software. Check out [bowl builder](https://www.lab37.us/video-players/bowlbuilder-home)!
 
-Before that, I was a research intern at the [Qatar Computing Research Institute](https://www.hbku.edu.qa/en/qcri) where I worked with the amazing [Mohammad Shahmeer](https://www.linkedin.com/in/shahmeer99) on converting human-centric data (like unstructed pdfs) into actionable knowledge.
+Before that, I was a research intern at the [Qatar Computing Research Institute](https://www.hbku.edu.qa/en/qcri) on converting human-centric data (like unstructed pdfs) into actionable knowledge.
 
 I also served as a Teaching Assistant for the data structures and algorithms class at CMU ([15-122](https://www.cs.cmu.edu/~15122-archive/s25/about.shtml)) which was an incredibly meaningful experience and as a research assistant at [Kittur Lab](https://kittur.org/), Human-Computer Interaction Institute. 
 
@@ -33,4 +33,4 @@ Here's a list of things I want to learn about more (in no particular order): com
 
 ## Personal
 
-I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded by a lot of cats :). I play for the table tennis team at CMU, and love reading, especially theology and philosophy. [This page](./books) contains some of my favourite reads.
+I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded by a lot of cats :). I play for the table tennis team at CMU, and love reading, especially theology and philosophy. [This page](./books) contains some of my favourite reads. I play electric guitar.
