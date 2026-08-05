@@ -88,9 +88,13 @@
 
     .photo {
       float: left;
+      shape-outside: circle(50%);
+      shape-margin: 1rem;
       margin: 0.25rem 2rem 1rem 0;
       width: 220px;
-      border-radius: 4px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
     }
 
     /* shared components: chips, tags, cards -- reused across blog/tag/homelab pages */

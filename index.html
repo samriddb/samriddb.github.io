@@ -88,9 +88,13 @@
 
     .photo {
       float: left;
+      shape-outside: circle(50%);
+      shape-margin: 1rem;
       margin: 0.25rem 2rem 1rem 0;
       width: 220px;
-      border-radius: 4px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
     }
 
     /* shared components: chips, tags, cards -- reused across blog/tag/homelab pages */
@@ -169,7 +173,7 @@
     </nav>
   </header>
   <main>
-    <!-- <img class="photo" src="/photo.jpg" alt="Samriddhi Bhardwaj" /> -->
+    <img class="photo" src="/moi.jpg" alt="Samriddhi Bhardwaj" />
 <p>Hi! I'm Samriddhi, a Computer Science student at Carnegie Mellon University. I like systems, theory and ML.</p>
 <p>You can reach me at hello [at] sbhardwaj [dot] com.</p>
 <h2 id="bio">Bio</h2>
