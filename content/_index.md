@@ -3,7 +3,7 @@ title = "Samriddhi"
 template = "index.html"
 +++
 
-<!-- <img class="photo" src="/photo.jpg" alt="Samriddhi Bhardwaj" /> -->
+<img class="photo" src="/moi.jpg" alt="Samriddhi Bhardwaj" />
 
 Hi! I'm Samriddhi, a Computer Science student at Carnegie Mellon University. I like systems, theory and ML.
 
