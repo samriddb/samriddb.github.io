@@ -9,7 +9,7 @@ no_title = true
 
 # People watching, by country
  
-Having moved around quite a bit, I've started subconsciously keeping a mental list of the small things that differ by country -- not just the clothes, food, traditions, but the texture of daily life. 
+Having moved around quite a bit, I've started subconsciously keeping a mental list of the small things that differ by country. Not just the more obvious stuff (food, clothes, culture, etc.) but the texture of daily life. 
 
 The best part of meeting people from different cultures is noticing the smaller things that nobody puts in a guidebook! So here's a running list. 
 
