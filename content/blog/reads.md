@@ -10,6 +10,7 @@ no_date = true
 
 - Almond by Sohn Won-pyung
 - Norwegian Wood by Haruki Murakami
+- Nicomachean Ethics by Aristotle
 - I Am That by Sri Nisargadatta Maharaj
 - In the Buddha's Word - anthology of the Buddha's teachings
 - The Tragedy of Great Power Politics by John J. Mearsheimer
