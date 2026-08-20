@@ -10,17 +10,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install Zola
-        uses: taiki-e/install-action@v2
-        with:
-          tool: zola@0.19.2
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
 
-      - name: Build
-        run: zola build
+      - name: Render
+        run: quarto render
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./_site
           cname: sbhardwaj.com

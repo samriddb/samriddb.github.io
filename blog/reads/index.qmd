@@ -1,10 +1,19 @@
-+++
-title = "Reading"
-date = 2026-06-16
+---
+title: "Reading"
+pagetitle: "Reading · Samriddhi"
+date: 2026-06-16
+---
 
-[extra]
-no_date = true
-+++
+<div class="wrap">
+<header>
+<div>
+<h1>Reading</h1>
+</div>
+<nav>
+<a href="/">About</a>
+<a href="/blog/">Blog</a>
+</nav>
+</header>
 
 ## Books
 
@@ -59,3 +68,11 @@ Some sites that tickle my brain:
 - [gentlemanstationer.com](https://www.gentlemanstationer.com)
 
 Always looking for suggestions!
+
+<p style="margin-top: 40px;"><a href="/blog/">← back to blog</a></p>
+
+<footer>
+Made with <a href="https://quarto.org/">Quarto</a>.
+</footer>
+
+</div>

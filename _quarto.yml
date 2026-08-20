@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "*/*.qmd"
+    - "*/*/*.qmd"
+
+website:
+  site-url: "https://sbhardwaj.com"
+
+format:
+  html:
+    theme: none
+    document-css: false
+    css: styles.css
+    page-layout: full
+    title-block-banner: false
+    toc: false
+    include-in-header: fonts.html
+    include-after-body: anchor-links.html

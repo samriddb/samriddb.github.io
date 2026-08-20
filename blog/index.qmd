@@ -1,0 +1,22 @@
+---
+pagetitle: "Blog · Samriddhi"
+listing:
+  id: listing
+  contents: "*/index.qmd"
+  type: default
+  categories: true
+  sort: "date desc"
+  fields: [title]
+---
+
+<div class="wrap" style="padding-bottom: 0;">
+<header>
+<div>
+<h1>Blog</h1>
+</div>
+<nav>
+<a href="/">About</a>
+<a href="/blog/" class="active">Blog</a>
+</nav>
+</header>
+</div>

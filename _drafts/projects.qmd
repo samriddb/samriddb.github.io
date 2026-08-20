@@ -1,7 +1,7 @@
-+++
-title = "Projects"
-render = false
-+++
+---
+title: "Projects"
+draft: true
+---
 
 ## Projects
 

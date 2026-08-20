@@ -1,7 +1,17 @@
-+++
-title = "Now Self-Hosting"
-template = "page.html"
-+++
+---
+pagetitle: "Now Self-Hosting · Samriddhi"
+---
+
+<div class="wrap">
+<header>
+<div>
+<h1>Now Self-Hosting</h1>
+</div>
+<nav>
+<a href="/">About</a>
+<a href="/blog/">Blog</a>
+</nav>
+</header>
 
 This page is where the live parts of this site will eventually live — proof-of-work for the homelab, not just a description of it.
 
@@ -16,3 +26,9 @@ This page is where the live parts of this site will eventually live — proof-of
 ## Setup
 
 *Coming soon — architecture diagram and a list of what's actually running.*
+
+<footer>
+Made with <a href="https://quarto.org/">Quarto</a>.
+</footer>
+
+</div>

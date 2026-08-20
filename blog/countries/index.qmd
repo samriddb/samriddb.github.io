@@ -1,17 +1,23 @@
-+++
-title = "Countries"
-date = 2026-06-17
+---
+title: "People watching, by country"
+pagetitle: "People watching, by country · Samriddhi"
+date: 2026-06-17
+---
 
-[extra]
-no_date = true
-no_title = true
-+++
+<div class="wrap">
+<header>
+<div>
+<h1>People watching, by country</h1>
+</div>
+<nav>
+<a href="/">About</a>
+<a href="/blog/">Blog</a>
+</nav>
+</header>
 
-# People watching, by country
- 
-Having moved around quite a bit, I've started subconsciously keeping a mental list of the small things that differ by country. Not just the more obvious stuff (food, clothes, culture, etc.) but the texture of daily life. 
+Having moved around quite a bit, I've started subconsciously keeping a mental list of the small things that differ by country. This inlcudes the more obvious stuff (food, clothes, culture, etc.) but also texture of daily life.
 
-The best part of meeting people from different cultures is noticing the smaller things that nobody puts in a guidebook! So here's a running list. 
+The best part of meeting people from different cultures is noticing the smaller things that nobody puts in a guidebook! So here's a running list.
 
 Based on vibes, ymmv.
 
@@ -35,7 +41,7 @@ Based on vibes, ymmv.
 
 ## **UK**
 
-- Rock music from here is witty, dry, sarcastic, and/or depressing. This applies to British humour as well. Think: Radiohead/Arctic Monkeys/The Smiths vs Bruce Springsteen, The Eagles, Fleetwood Mac. Of course there are exceptions (hi My Chemical Romance and all of 2010s emo music). I conjecture this might also have to do with UK weather. 
+- Rock music from here is witty, dry, sarcastic, and/or depressing. This applies to British humour as well. Think: Radiohead/Arctic Monkeys/The Smiths vs Bruce Springsteen, The Eagles, Fleetwood Mac. Of course there are exceptions (hi My Chemical Romance and all of 2010s emo music). I conjecture this might also have to do with UK weather.
 
 ## **India**
 
@@ -63,3 +69,11 @@ Based on vibes, ymmv.
 ## **Russia**
 
 - Superstitions
+
+<p style="margin-top: 40px;"><a href="/blog/">← back to blog</a></p>
+
+<footer>
+Made with <a href="https://quarto.org/">Quarto</a>.
+</footer>
+
+</div>

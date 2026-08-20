@@ -1,0 +1,15 @@
+<script>
+  document.querySelectorAll('h1[id], h2[id], h3[id]').forEach(h => {
+    const a = document.createElement('a');
+    a.className = 'heading-anchor';
+    a.href = '#' + h.id;
+    a.textContent = '#';
+    h.prepend(a);
+    h.style.cursor = 'pointer';
+    h.addEventListener('click', e => {
+      if (e.target === a) return;
+      window.location.hash = h.id;
+      navigator.clipboard.writeText(window.location.href).catch(() => {});
+    });
+  });
+</script>

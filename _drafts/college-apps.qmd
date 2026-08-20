@@ -1,0 +1,115 @@
+---
+title: "Reflections on college admissions"
+date: 2026-06-24
+draft: true
+---
+
+I spent my high school years in Doha, Qatar, where I went to an Indian school. I studied in the notorious CBSE curriculum.
+
+I am writing this because I frequently get contacted by high school students (especially international students) for advice on college apps. I thought it'd be nice to consolidate my experiences, opinions, and advice on this.
+
+College applications is unfortunately a flawed system that has huge impact on your life and career. Access to advice on college apps is very unequal. This disparity is driven by factors like where you are born, how much money you have, and who your parents know. I want to help democratize this information. If you have more questions or would like other help with your application, feel free to reach out to me.
+
+## Disclaimers
+I may not know what I'm talking about. As I'm writing this, I'm 20 years old and I know that the college application process and high school experience has changed significantly since when I was doing this (especially with the pandemic and AI and what not). I am still in my senior year of university. I have also by no means contacted anyone involved in college admissions for their advice. These are simply my thoughts and experiences. I also applied for Computer Science and Mathematics for most schools so I'm only familiar with those fields.
+
+Especially among international students, there is a huge economy built aroud students admitted into prestigious universities offering coaching services to high school students and their families who don't know better. These people usually don't know what they're talking about either! Most of them were admitted to their university by some combination of hard work and luck. Anyone who claims to guarantee you a spot into a university either doesn't know what they're talking about or they're taking advantage of you.
+
+The signal to noise ratio is in this realm is really really low. This becomes more obvious when you've been through the process yourself. It's hard to tell apart intentions, but still try to keep a critical eye when seeking advice. Be critical of me too!
+
+### If you are in high school
+This is by no means a list of things you should or shouldn't do. We all have different backgrounds, upbringings, goals, and priorities. I just hope you can draw some insight from what I was thinking going through this process.
+
+### If you are not in high school
+Enjoy this read! I invite you to use this as an opportunity to reflect on your own school and college experience. I can only hope that the working of my 17 year old brain is mildly interesting to you.
+
+# Why I decided to study abroad
+Some of the many reasons:
+
+-  I wasn't inclined to go through the rat race that is the Indian university standardized exams, considered some of the most notorious in the world. For those unfamiliar, about 1.3 million students write the Joint Entrance Examiniations (JEE) every year, where they're tested on Physics, Mathematics and Chemistry. The top 17k(ish) students get admissions into the Indian Institute of Technology (IIT), the most presitigous schools in India. I could write a whole seperate blog on why this process is extremely flawed, but my main reasons for not wanting to indulge in this were that:
+    - Most people that I knew who were on this track had completely given up on their social life and hobbies for all 4 years of highschool.
+    - I wanted my school experience to be fun and memorable.
+    - I didn't enjoy the kind of preparation you had to do for IITs.
+- I wanted to meet people from all over the world and all walks of life.
+- I wanted the option to take whatever class I could dream of. At CMU, I took a class on Chinese Cultural practices, where we learned about different types of hotpot and performed chinese dances. Another fun one was a class on esoteric programming languages, where we developed a mock esolang of our own. These experiences felt important to me.
+
+# What do you want out of university
+
+Here's something that I didn't think too much about, but I encourage you to.
+
+You need to think about what kind of people you want to surround yourself with for the next four years. This includes:
+
+- The kind of job. Is your end goal academia? Do you want to become a founder? Do you want to become a researcher? Do you want to work in corporate? Or is it something else entirely?
+- The domain of job, usually something related to your major.
+- How important is money vs passion for you? I hate to present this as a tradeoff but often it ends up being a tradeoff. Either ways, thinking about this is an intersting thought exercise.
+- What kind of city you live in? And along those lines, what kind of people you want to surround yourself with? Is it other people with similar hobbies and interests are you so you can sharpen your passion in those? Or is it people from all kinds of backgrounds? Do you want to meet grinders and super hardworking people? Do you want to meet well-connected people? Which of those is important to you?
+- Do you already kind of know what you like (whether in your career on extracurriculars) or do you want opportunities to explore more?
+- How much do you care about the "energy" of your school, and whether it's in the middle of cornfields or right in the heart of a city?
+
+This exercise is helpful for deciding what kind of college you want to apply to and it'll help guide the essays you write.
+
+Goes without saying that you'll change a lot during college. You might do a completel 180 on a lot of your strongly held beliefs and opininons. However, I find that people often underestimate how much a 16/17 year old knows about themself and who they want to be. Your best bet is to search for an environment where you are allowed to pursue the beliefs and interests you currently have, while also allowing room to grow and change.
+
+
+<!-- Plenty of people come in with ambitions of doing grad school, leaving to form a startup, etc. but find that the environment at their university just doesn't suit them -- making them demotivated.
+
+If you're confident in your will and motivation, then ignore this advice. If you have a will that strong, then you'll be able to live through not enjoying the people you'll spend your time with, the weather of your city, the campus architecture, or other details that might seem trite. I must point out however that keep in mind, you will change. You don't have to go to classes anymore. Your parents will know less about your life now. There are less extrinsic motivations now. You truly have to think about what actually motivates you. This is exciting but also scary. -->
+
+# Figure out the vibe of universities
+
+Universities have personalities. You kind of can reduce a university to the vibe of an average person that goes there. Some schools are party schools, some are nerdier, some have very strong school culture, and others don't. Some are really active in sports and extracurriculars and some are more academic focused. Different universities spend their money on different kinds of resources.
+
+Again, this is helpful for you to know whether you want to such a university and informs the kind of essays you'll write.
+
+I asked Claude to put together the vibe of a CS major at some different univerisities. Based on my experiences, it's kind of bang on.
+
+**MIT** — Sleep-deprived, running on cold brew, casually building a satellite for a p-set while questioning every life choice that led here.
+
+**Stanford** — Effortlessly building a startup in a garage while somehow also acing algorithms, networking harder than they're studying.
+
+**CMU** — Grinding competitive programming problems at 2am in a windowless lab, genuinely enjoys suffering through 15-213.
+
+**Berkeley** — Politically opinionated hacker who'll debate open-source licensing philosophy as passionately as they debug recursion.
+
+**Caltech** — Tiny cohort of borderline-savant introverts who treat CS 24 like a religious ritual and haven't seen sunlight since orientation.
+
+**UIUC** — Practical, unpretentious grinder stacking internships like Pokémon cards, quietly becoming an incredible engineer without the ego.
+
+**Georgia Tech** — Older-than-average, work-experienced pragmatist treating the OMSCS-adjacent culture like a bootcamp for getting a better job, not enlightenment.
+
+**Waterloo** — Perpetually on a co-op term somewhere, treats the degree as a five-year internship pipeline with classes squeezed in between.
+
+**Princeton** — Theory-obsessed perfectionist who'll pick a PhD track over a FAANG offer just to prove a point about "real" computer science.
+
+**Cornell** — Overachiever juggling CS with some entirely unrelated passion (music, bio, whatever), somehow acing both without bragging about it.
+
+**University of Washington** — Chill, coffee-fueled, quietly brilliant, treats landing an Amazon or Microsoft internship as inevitable rather than aspirational.
+
+**Oxford/Cambridge** — Wears the "reading Computer Science" phrasing unironically, mixes theoretical rigor with an oddly strong debate-society energy.
+
+# Standardized Testing
+If you decide to take theses, work hard on these! Yes, it's flawed but standardized exams are one of those things where you just have to learn how the test-makers want you to think. Once you figure that out, it gets easier. There is a formula on how to think and what kind of questions they ask. Try to understand that. I didn't know this, but also think about whether you want to take the ACTs vs the SATs.
+
+For english proficiency, most people I know took the TOEFL or IELTS. From whta I understood, TOEFL was preferred by US universities so that's what I took. I studied for the TOEFL for less than 5 hours TOEFL. If you're fluent in English it's really not a big deal. It's mostly used by universities to prove English profiency and nothing beyond that.
+
+## Extra-curricular activities
+
+It is here I will provide the ground-breaking advice that has been iterated to every single high schooler -- do what you enjoy.
+
+Throughout my schooling, I've picked up and dropped more hobbies than I can remember. I asked my parents to put me into Karate lessons because I wanted to be stronger than my elder sister. I've always loved music so I learned guitar and various percussion instruments over the years and played in a band in high school. I had various periods of not playing the guitar for months a time and thinking it wasn't for me and then picking it back up again. My family and I would watch the reality show 'Dance India Dance' together when I was still in kindergarden, which inspired me to learn dance, only to quit it 5 years later. Growing up playing chess with my family, I also played for my school. I always though tennis looked cool so that was also an obsession of mine.
+
+The word hobby is overloaded. You don't need to take art lessons to claim that art is your hobby. If you doodle in classes and that is the exact level of committment that you want from art, then just do that. Don't try to label yourself too much -- this will only lead you to miss out on opportunities in life. I even remember picking up drums in the seventh grade thinking it was too late for me because so many people at school had been playing since they were much younger. This is a theme that will stick through the rest of your life and you have to learn to get rid of that feeling. Playing tabla for my school was one of the most enriching experiences of my life and I'm glad I decided it wasn't too late for me to do that.
+
+So many high schoolers have asked what hobbies and clubs they should do to get admissions to X university. The only answer here is do what you like and what you think you'll grow from -- but do something. Just don't spend all of your youth gaming or binge watching TV.
+
+## Essays
+
+Have depth.
+
+Think about what makes you, you.
+
+You're definitely unique, make that work for you.
+
+Pen tapping essay.
+
+People underestimate high schoolers.

@@ -1,7 +1,18 @@
-+++
-title = "Samriddhi"
-template = "index.html"
-+++
+---
+pagetitle: "Samriddhi"
+---
+
+<div class="wrap">
+<header>
+<div>
+<h1>Samriddhi<br>Bhardwaj</h1>
+<div class="pronunciation">/sʌm.rɪd.iː bʱʌr.d̪.vɑːdʒ/</div>
+</div>
+<nav>
+<a href="/" class="active">About</a>
+<a href="/blog/">Blog</a>
+</nav>
+</header>
 
 <div class="intro">
 <img class="photo" src="/moi.jpg" alt="Samriddhi Bhardwaj" />
@@ -15,15 +26,15 @@ You can reach me at hello [at] sbhardwaj [dot] com.
 </div>
 </div>
 
-## Bio 
+## Bio
 
 Previously, I was a Member of Technical Staff intern (2x) at [Atoms](https://atoms.co/)/[Lab37](https://www.lab37.us/) where I worked on robot software and ML infra. Check out [bowl builder](https://www.lab37.us/video-players/bowlbuilder-home)!
 
 Before that, I was a research intern at the [Qatar Computing Research Institute](https://www.hbku.edu.qa/en/qcri) on converting human-centric data (like unstructed pdfs) into actionable knowledge.
 
-I also served as a Teaching Assistant for the data structures and algorithms class at CMU ([15-122](https://www.cs.cmu.edu/~15122-archive/s25/about.shtml)) and as a research assistant at [Kittur Lab](https://kittur.org/), Human-Computer Interaction Institute. 
+I also served as a Teaching Assistant for the data structures and algorithms class at CMU ([15-122](https://www.cs.cmu.edu/~15122-archive/s25/about.shtml)) and as a research assistant at [Kittur Lab](https://kittur.org/), Human-Computer Interaction Institute.
 
-My favourite programming language is Rust 🦀. I also really enjoy GPU programming. My favorite classes at CMU have been compilers, parallel computing, theory of computation, database systems, and linguistics. 
+My favourite programming language is Rust 🦀. I also really enjoy GPU programming. My favorite classes at CMU have been compilers, parallel computing, theory of computation, database systems, and linguistics.
 
 Here's a list of things I want to learn about more (in no particular order): computational biology, computer architecture, combinatorics, set theory, evolution, information theory, linguistics, and gen AI theory.
 
@@ -40,3 +51,9 @@ Here's a list of things I want to learn about more (in no particular order): com
 ## Personal
 
 I grew up across Kuwait, Abu Dhabi, India, and mostly Doha, Qatar — surrounded by a lot of cats :). I play for the table tennis team at CMU, and love reading, especially theology and philosophy. [This page](/blog/reads/) contains some of my favourite reads. I play electric guitar.
+
+<footer>
+Made with <a href="https://quarto.org/">Quarto</a>.
+</footer>
+
+</div>
