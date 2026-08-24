@@ -1,15 +1,8 @@
 ---
 pagetitle: "Misc · Samriddhi"
-listing:
-  id: listing
-  contents: "*/index.qmd"
-  type: default
-  categories: false
-  sort: "date desc"
-  fields: [title]
 ---
 
-<div class="wrap" style="padding-bottom: 0;">
+<div class="wrap">
 <header>
 <div>
 <h1>Misc</h1>
@@ -20,4 +13,18 @@ listing:
 <a href="/misc/" class="active">Misc</a>
 </nav>
 </header>
+
+<div class="card">
+<h3><a href="/misc/places/">Places</a></h3>
+<p>Some of my favourite places in the world.</p>
+</div>
+
+<div class="card">
+<h3><a href="http://inkright.sbhardwaj.com/">InkRight ↗</a></h3>
+</div>
+
+<footer>
+Made with <a href="https://quarto.org/">Quarto</a>.
+</footer>
+
 </div>
