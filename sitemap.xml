@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://sbhardwaj.com/misc/places/index.html</loc>
+    <lastmod>2026-08-24T17:57:04.803Z</lastmod>
+  </url>
+  <url>
     <loc>https://sbhardwaj.com/index.html</loc>
-    <lastmod>2026-08-20T17:35:09.019Z</lastmod>
+    <lastmod>2026-08-24T17:57:04.795Z</lastmod>
   </url>
   <url>
     <loc>https://sbhardwaj.com/blog/reads/index.html</loc>
-    <lastmod>2026-08-20T17:35:09.019Z</lastmod>
+    <lastmod>2026-08-24T17:57:04.795Z</lastmod>
   </url>
   <url>
     <loc>https://sbhardwaj.com/blog/countries/index.html</loc>
-    <lastmod>2026-08-20T17:35:09.019Z</lastmod>
+    <lastmod>2026-08-24T17:57:04.795Z</lastmod>
   </url>
   <url>
     <loc>https://sbhardwaj.com/blog/index.html</loc>
-    <lastmod>2026-08-20T17:35:09.019Z</lastmod>
+    <lastmod>2026-08-24T17:57:04.795Z</lastmod>
   </url>
   <url>
     <loc>https://sbhardwaj.com/homelab/index.html</loc>
-    <lastmod>2026-08-20T17:35:09.019Z</lastmod>
+    <lastmod>2026-08-24T17:57:04.795Z</lastmod>
+  </url>
+  <url>
+    <loc>https://sbhardwaj.com/misc/index.html</loc>
+    <lastmod>2026-08-24T17:57:04.795Z</lastmod>
   </url>
 </urlset>
