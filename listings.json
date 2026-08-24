@@ -1,15 +1,16 @@
 [
   {
+    "listing": "/misc/index.html",
+    "items": [
+      "/misc/inkright/index.html",
+      "/misc/places/index.html"
+    ]
+  },
+  {
     "listing": "/blog/index.html",
     "items": [
       "/blog/countries/index.html",
       "/blog/reads/index.html"
-    ]
-  },
-  {
-    "listing": "/misc/index.html",
-    "items": [
-      "/misc/places/index.html"
     ]
   }
 ]
