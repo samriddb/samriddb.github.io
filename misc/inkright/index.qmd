@@ -1,0 +1,27 @@
+---
+title: "InkRight"
+pagetitle: "InkRight · Samriddhi"
+date: 2026-08-24
+---
+
+<div class="wrap">
+<header>
+<div>
+<h1>InkRight</h1>
+</div>
+<nav>
+<a href="/">About</a>
+<a href="/blog/">Blog</a>
+<a href="/misc/">Misc</a>
+</nav>
+</header>
+
+A small tool for F-1/J-1 international students and scholars to check their U.S. tax residency status under the substantial presence test — import your I-94 travel history or enter stays manually, all parsed client-side in your browser. Based on public IRS rules, not tax advice.
+
+<p><a href="http://inkright.sbhardwaj.com/">→ inkright.sbhardwaj.com</a></p>
+
+<footer>
+Made with <a href="https://quarto.org/">Quarto</a>.
+</footer>
+
+</div>
