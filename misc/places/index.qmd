@@ -1,0 +1,128 @@
+---
+title: "Places"
+pagetitle: "Places · Samriddhi"
+date: 2026-08-24
+resources:
+  - "images/*"
+---
+
+<div class="wrap">
+<header>
+<div>
+<h1>Places</h1>
+</div>
+<nav>
+<a href="/">About</a>
+<a href="/blog/">Blog</a>
+<a href="/misc/">Misc</a>
+</nav>
+</header>
+
+Very incomplete list of my favourite places in the world
+
+<div class="gallery-controls">
+<button class="gallery-btn" id="gallery-prev-top">&larr; prev</button>
+<span class="gallery-counter" id="gallery-counter-top"></span>
+<button class="gallery-btn" id="gallery-next-top">next &rarr;</button>
+</div>
+<div class="gallery-frame">
+<img id="gallery-img" alt="" />
+</div>
+<div class="gallery-caption">
+<p class="gallery-location" id="gallery-location"></p>
+<p class="gallery-note" id="gallery-note"></p>
+<p class="gallery-credit" id="gallery-credit"></p>
+</div>
+
+<script>
+(() => {
+  // Add/replace entries here -- drop image files into misc/places/images/
+  // and point src at them. Placeholders below are stand-ins.
+  //   location:     where the photo was taken (required)
+  //   note:         why you like/recommend it (optional)
+  //   photographer: who took it, if not you (optional -- omit or leave "" if it was you)
+  const places = [
+    {
+      src: "images/mia-doha-qatar.png",
+      location: "Museum of Islamic Art, Doha, Qatar",
+      note: "I love a good museum, with a good park and Qatari cats.",
+      photographer: "",
+    },
+    {
+      src: "images/mina-district-doha-qatar.png",
+      location: "Mina District, Doha, Qatar",
+      note: "I think the (much celebrated) Doha corniche looks even prettier when viewed from the colourful buildings of the Mina Port.",
+      photographer: "",
+    },
+    {
+      src: "images/souq-waqif-doha-qatar.png",
+      location: "Souq Waqif, Doha, Qatar",
+      note: "One of the best places in Qatar to drink karak, read a book, and have a conversation with a friend.",
+      photographer: "",
+    },
+    {
+      src: "images/the-mall-cmu-pittsburgh-pa.jpg",
+      location: "The Mall, Carnegie Mellon University, Pittsburgh, PA",
+      note: "There are some lawn chairs here that are great to read in between classes. Also fun to bask in the sun on the somewhat rare sunny pittsburgh days.",
+      photographer: "IECA (iecaonline.com)",
+    },
+    {
+      src: "images/fort-pitt-pittsburgh-pa.png",
+      location: "Right outside Fort Pitt Tunnel, Pittsburgh, PA",
+      note: "My love for this view might be driven by my liking for The Perks of Being a Wallflower (2012) as a teenager and because I ended up in Pittsburgh for university (where the movie was filmed)! But I still think the contrast between the darkness of the tunnel and the view of the city with all of it's bridges is incredible. It's especially great when you're driving out of the airport. This image does not do it justice. It's very important to listen to Heroes by David Bowie as you drive through the tunnel.",
+      photographer: '"The Perks of Being a Wallflower" (2012), dir. Stephen Chbosky',
+    },
+    {
+      src: "images/wakra-souq-doha-qatar.png",
+      location: "Souq Al-Wakra, Doha, Qatar",
+      note: "The sunrise and sunsets here are incredible, especially during a low tide, when you can walk further into the sea.",
+      photographer: "marhaba.qa",
+    },
+  ];
+
+  // shuffle so places don't cluster by location
+  for (let j = places.length - 1; j > 0; j--) {
+    const k = Math.floor(Math.random() * (j + 1));
+    [places[j], places[k]] = [places[k], places[j]];
+  }
+
+  let i = 0;
+  const img = document.getElementById('gallery-img');
+  const location = document.getElementById('gallery-location');
+  const note = document.getElementById('gallery-note');
+  const credit = document.getElementById('gallery-credit');
+  const counter = document.getElementById('gallery-counter-top');
+
+  function render() {
+    const p = places[i];
+    img.src = p.src;
+    img.alt = p.location;
+    location.textContent = p.location;
+    note.textContent = p.note || "";
+    note.style.display = p.note ? "" : "none";
+    credit.textContent = p.photographer ? ("photo by " + p.photographer) : "";
+    credit.style.display = p.photographer ? "" : "none";
+    counter.textContent = (i + 1) + " / " + places.length;
+  }
+
+  function prev() { i = (i - 1 + places.length) % places.length; render(); }
+  function next() { i = (i + 1) % places.length; render(); }
+
+  document.getElementById('gallery-prev-top').addEventListener('click', prev);
+  document.getElementById('gallery-next-top').addEventListener('click', next);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
+  });
+
+  render();
+})();
+</script>
+
+<p style="margin-top: 40px;"><a href="/misc/">← back to misc</a></p>
+
+<footer>
+Made with <a href="https://quarto.org/">Quarto</a>.
+</footer>
+
+</div>

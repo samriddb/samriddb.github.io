@@ -1,10 +1,10 @@
 ---
-pagetitle: "Blog · Samriddhi"
+pagetitle: "Misc · Samriddhi"
 listing:
   id: listing
   contents: "*/index.qmd"
   type: default
-  categories: true
+  categories: false
   sort: "date desc"
   fields: [title]
 ---
@@ -12,12 +12,12 @@ listing:
 <div class="wrap" style="padding-bottom: 0;">
 <header>
 <div>
-<h1>Blog</h1>
+<h1>Misc</h1>
 </div>
 <nav>
 <a href="/">About</a>
-<a href="/blog/" class="active">Blog</a>
-<a href="/misc/">Misc</a>
+<a href="/blog/">Blog</a>
+<a href="/misc/" class="active">Misc</a>
 </nav>
 </header>
 </div>

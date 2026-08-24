@@ -11,6 +11,7 @@ pagetitle: "Samriddhi"
 <nav>
 <a href="/" class="active">About</a>
 <a href="/blog/">Blog</a>
+<a href="/misc/">Misc</a>
 </nav>
 </header>
 

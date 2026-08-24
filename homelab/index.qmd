@@ -10,6 +10,7 @@ pagetitle: "Now Self-Hosting · Samriddhi"
 <nav>
 <a href="/">About</a>
 <a href="/blog/">Blog</a>
+<a href="/misc/">Misc</a>
 </nav>
 </header>
 
