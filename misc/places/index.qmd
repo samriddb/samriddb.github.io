@@ -22,7 +22,7 @@ Very incomplete list of my favourite places in the world
 
 <div class="gallery-controls">
 <button class="gallery-btn" id="gallery-prev-top">&larr; prev</button>
-<span class="gallery-counter" id="gallery-counter-top"></span>
+<div class="gallery-counter" id="gallery-counter-top"></div>
 <button class="gallery-btn" id="gallery-next-top">next &rarr;</button>
 </div>
 <div class="gallery-frame">
