@@ -8,6 +8,7 @@ project:
 
 website:
   site-url: "https://sbhardwaj.com"
+  draft-mode: unlinked
 
 format:
   html:

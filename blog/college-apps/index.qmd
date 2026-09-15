@@ -1,0 +1,134 @@
+---
+title: "Thoughts on college apps"
+pagetitle: "College apps · Samriddhi"
+date: 2026-09-15
+---
+
+<div class="wrap">
+<header>
+<div>
+<h1>Thoughts on college apps</h1>
+</div>
+<nav>
+<a href="/">About</a>
+<a href="/blog/">Blog</a>
+<a href="/misc/">Misc</a>
+</nav>
+</header>
+
+I am writing this because I frequently get contacted by high school students (especially international students) for advice on college apps. I thought it'd be nice to consolidate my experiences, opinions, and advice on this.
+
+College apps are unfortunately a flawed system that has sizeable impact on your life. Access to advice on college apps is very unequal. This disparity is driven by factors like where you are born, how much money you have, and who your parents know. I believe in democratizing this information. If you have more questions or would like other help with your application, feel free to reach out to me. Happy to chat about CMU as well.
+
+## Disclaimers
+
+I spent my high school years in Doha, Qatar, where I went to an Indian school. I studied in the [CBSE curriculum](https://en.wikipedia.org/wiki/Central_Board_of_Secondary_Education){target="_blank" rel="noopener noreferrer"}. A lot of my opinions are kind of specific to my background. So, I may not know what I'm talking about. As I'm writing this, I'm 20 years old and I know that the college application process and high school experience has changed significantly since when I was doing this (especially with the pandemic and AI and what not). I am still in my senior year of university. I have also by no means contacted anyone involved in college admissions for their advice. These are simply my thoughts and experiences. I also applied for Computer Science and Mathematics for most schools so I'm only familiar with those fields.
+
+Especially among international students, there is a huge economy built around students admitted into prestigious universities offering coaching services to high school students and their families who don't know better. These people usually don't know what they're talking about either! Most of them were admitted to their university by some combination of hard work and luck. Anyone who claims to guarantee you a spot into a university either doesn't know what they're talking about or they're taking advantage of you.
+
+The signal to noise ratio in this realm is really really low. This becomes more obvious when you've been through the process yourself. It's hard to tell apart intentions, but still try to keep a critical eye when seeking advice. Be critical of me too!
+
+If you are in high school, this is by no means a list of things you should or shouldn't do. We all have different backgrounds, upbringings, goals, and priorities. I just hope you can draw some insight.
+
+## Figuring out where to apply
+
+### Why I decided to study abroad
+
+I mostly applied to universities in US, Canada, Singapore, and India. Some reasons why I was interested to come to the US for university:
+
+-  I didn't want to go through the rat race that is the Indian university standardized exams, considered some of the most notorious in the world. For those unfamiliar, about 1.3 million students write the Joint Entrance Examinations (JEE) every year, where they're tested on Physics, Mathematics and Chemistry. The top 17k(ish) students get admissions into the Indian Institute of Technology (IIT), the most prestigious schools in India. I could write a whole separate blog on my qualms with this system, but my main reasons for not wanting to indulge in this were that:
+    - A lot of people that I knew who were on this track had completely given up on their social life and hobbies for all 4 years of high school (and more).
+    - I wanted my school experience to be fun and have time for extracurriculars.
+    - I didn't enjoy the kind of preparation you had to do for IITs (although I enjoyed Olympiads a lot).
+- I wanted to meet people from all over the world and all walks of life.
+- I wanted freedom in constructing my degree and what classes and extracurriculars I could do.
+
+
+### What do you want out of university?
+
+You need to think about what you want out of university. You need to think about what kind of people you want to surround yourself with for the next four years. This includes:
+
+- The kind of work you see yourself doing. Is your end goal academia? Do you want to work in a startup? Do you want to become a researcher? Do you want to work in corporate? Or is it something else entirely?
+- The domain of job, usually something related to your major.
+- How important is money vs passion for you? I hate to present this as a tradeoff, but often it ends up being a tradeoff. Either ways, it is an interesting thought exercise.
+- What kind of city do you want to live in? And along those lines, what kind of people do you want to surround yourself with? Is it other people with similar hobbies and interests as you so you can sharpen your passion in those? Or is it people from all kinds of backgrounds? Do you want to meet grinders and super hardworking people? Do you want to meet well-connected people? Which of those feels most important to you?
+- Do you already kind of know what you like (whether in your career on extracurriculars) and want to learn those more deeply or do you want opportunities to explore more?
+- How much do you care about the "energy" of your school, and whether it's in the middle of nowhere or right in the heart of a city?
+
+This exercise is helpful for deciding what kind of college you want to apply to and it'll guide the essays you write. You don't need to have your life figured out, but it's good reflect.
+
+Goes without saying that you'll change a lot during college. However, I find that people often underestimate how much a 16 year old knows about themself and who they want to be. Your best bet is to search for an environment where you are allowed to pursue the beliefs and interests you currently have, while also allowing room to grow and change.
+
+Plenty of people come in with ambitions of doing grad school, leaving to form a startup, etc. but find that the environment at their university just doesn't suit them, which makes their undergrad just unenjoyable. You should try to enjoy your next 4 years. Often your ambitions will falter if you're not happy. You probably want to go somewhere where students genuinely like their school and reflect positively on their undergrad experience.
+
+If you're confident in your will and motivation, then ignore this advice. If you are truly that determined, then you'll be able to live through not enjoying the people you'll spend your time with, the weather of your city, the school culture, or other details that might seem trite as of now. Keep in mind, you will change. You don't have to go to classes anymore. Your parents will know less about your life now. There are less extrinsic motivations now. You truly have to think about what actually motivates you to get out of bed everyday.
+
+### How to learn about a university
+
+Yes, you should probably look up stats. You've probably heard of US news and [cs rankings](https://csrankings.org/){target="_blank" rel="noopener noreferrer"}. Look at career outcomes from different universities. These things are good to know, but also don't take them too seriously.
+
+You should also figure out the vibe of universities. Universities have personalities and they also tend to admit certain kinds of personalities. You can kind of reduce a university to the vibe of an average person that goes there for a comparative study. Some schools are party schools, some are nerdy, some have very strong school culture, and others don't. Some are really active in sports and extracurriculars and some are more academic focused. Some universities are kind of good at everything and some are really good at one thing but average at others. Some are political and some are not. Some have a liberal artsy vibe and some have a STEM vibe. Some are small and some are big. Different universities also spend their money on different kinds of resources. In some, you have to be pretty good at the thing to qualify for clubs while for some you don't. Some have strong alumni culture and some don't. (I could keep going...)
+
+This is helpful for you to know whether you want to go to this university and it also informs the kind of essays you'll write. The best way to do this is talk to current students and alums, but it's unfortunately one of those things that you only really understand during university.
+
+## Standardized Testing
+If you decide to take these, work hard! Yes, it's flawed but standardized exams are one of those things where you just have to learn how the test-makers want you to think. Once you figure that out, it gets easier. There is a formula on how to think and what kind of questions they ask. Try to understand that. 
+
+I didn't know this, but also think about whether you want to take the ACTs vs the SATs.
+
+International students --- for english proficiency, most people I know took the TOEFL or IELTS. From what I understood, TOEFL was preferred by US universities so that's what I took. I studied for the TOEFL for less than 5 hours. If you're fluent in English it's really not a big deal. It's mostly used by universities to prove English proficiency and nothing beyond that.
+
+## Extra-curricular activities
+
+My ground-breaking advice for this is to do what you enjoy.
+
+Throughout my schooling, I've picked up and dropped more hobbies than I can remember.
+The word hobby is overloaded. You don't need to take art lessons to claim that art is your hobby. If you doodle in classes and that is the exact level of commitment that you want from art, then just do that. I even remember picking up drums in the seventh grade thinking it was too late for me because so many people at school had been playing since they were much younger. This is a theme that will stick through the rest of your life and you have to learn to get rid of that feeling. Playing drums was one of the most enriching experiences of my life and I'm glad I decided it wasn't too late for me to do that.
+
+So many students ask what hobbies and clubs they should do to get admissions to X university. The only answer here is do what you like and what you think you'll grow from --- but do something. Find something you like and keep going at it. Just don't spend all of your youth gaming or binge watching TV. Take advantage of your freedom, neuroplasticity, and lack of responsibilities. There is no better time to try something new than right now.
+
+## Essays
+
+For these, I recommend truly, genuinely thinking about who you are, things that have shaped you, and who you want to become. 
+
+One piece of advice that I found helpful at the time was to think of your personality as a pie chart. Who are you? What shaped you? What feels important to you? How would somebody who truly knows you describe you? Delving deeper into one of those pies might make for a great essay.
+
+There definitely is something unique about you and an experience that has shaped who you are today. Use this to stand out. Be memorable. College admissions officers read thousands of essays --- what makes you interesting? It can be tempting to work off admitted students' essays that you see online. By all means, read those. But remember that there are probably thousands of other students getting inspired by the same content and applying to the same universities as you.
+
+For college specific essays, use the "vibe research" you did earlier to shape how you want to be perceived. What makes X university special and the place for you? What specific opportunities and resources and vibe does it have that other universities don't?
+
+While doing this, try to also have depth. For example, if you're applying to Stanford and you might want to say "I want to go to Stanford because it has great startup culture." Nothing wrong with this --- but literally every other application is going to say something along these lines. Instead, try to indirectly display your leadership, people skills, or scrappy, startupy mindset through stories and ideas.
+
+Avoid cliches. If you read enough essays online you'll start to realize what the cliches are.
+ 
+Be somebody the college admissions officer would want to get dinner with.
+
+Use different essays to reveal different sides of you. Having a theme between your essays is also nice as it gives the admissions officer something to remember you by, but try not to appear too one-dimensional.
+
+You're definitely unique, make that work for you. In my common app essay I talked about how my habit of pen-tapping in middle school inspired me to pick up drums and then tabla. This journey turned out to be pretty brain-chemistry-altering for me as I made some of my best friends through this and I also got other people in my school interested in this hobby. I used this story because it feels unique and reveals the things I value in life apart from my work.
+
+You'll find yourself repeating lots of information between your applications for different universities. I made a spreadsheet to keep track of what information, stories, and qualities I wanted to highlight for each prompt. This also helped me present a holistic picture of myself to each university.
+
+## Misc
+
+- Don't lose your mind or fall too deep into the rabbit hole. If you find yourself stressed and on r/a2c then something is definitely wrong. Be proud of who you are. If you're unhappy with who you are, the great thing is that you have the rest of your life (including university) to work towards a version of yourself you're more proud of. During college apps season, people often regret how they spent their time in school. I know it can be demoralizing to find people with amazing stats and extracurriculars online, but there is literally nothing wrong with not being top 10 in math olympiad or having an internship. Your high school is meant for exploring, learning, growing, having fun, and figuring out who you are. Everything else is just extra :)
+- Start early! Ask people to read your essays.
+- Ask alums from your school who study in universities you want to apply to. Their advice will probably apply the best to your situation.
+- These are pieces about grad school, but might be interesting anyways.
+    - [How to Write a Bad Statement for a Computer Science Ph.D. Admissions Application - Andy Pavlo](https://www.cs.cmu.edu/~pavlo/blog/2015/10/how-to-write-a-bad-statement-for-a-computer-science-phd-admissions-application.html){target="_blank" rel="noopener noreferrer"}
+    - [Applying to Ph.D. Programs in Computer Science - Mor Harchol-Balter](https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf){target="_blank" rel="noopener noreferrer"}
+- Other nice resources:
+    - [College Essay Guy](https://www.collegeessayguy.com/){target="_blank" rel="noopener noreferrer"} for admitted student essays. Don't try to model after these though.
+    - [Khan Academy](https://www.khanacademy.org/){target="_blank" rel="noopener noreferrer"} for SAT prep.
+    - University websites to understand their undergrad curriculum (try to figure out how it differs from other uni's).
+    - Blogs by students of these universities --- a lot of people write reflecting on their uni experience!
+    - The university's subreddit for more vibe research.
+
+<p style="margin-top: 40px;"><a href="/blog/">← back to blog</a></p>
+
+<footer>
+Made with <a href="https://quarto.org/">Quarto</a>.
+</footer>
+
+</div>
+

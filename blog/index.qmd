@@ -2,11 +2,14 @@
 pagetitle: "Blog · Samriddhi"
 listing:
   id: listing
-  contents: "*/index.qmd"
+  contents:
+    - reads/index.qmd
+    - college-apps/index.qmd
+    - countries/index.qmd
   type: default
   categories: true
-  sort: "date desc"
-  fields: [title]
+  sort: false
+  fields: [date, title]
 ---
 
 <div class="wrap" style="padding-bottom: 0;">
