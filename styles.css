@@ -27,8 +27,16 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 56px;
-  flex-wrap: wrap;
   gap: 12px;
+}
+
+header > div {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+header nav {
+  flex-shrink: 0;
 }
 
 header h1 {
@@ -205,6 +213,9 @@ h3:hover .heading-anchor { visibility: visible; }
 .listing-title a { color: var(--text); }
 .listing-title a:hover { color: var(--accent); }
 .listing-date { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--text-dim); }
+
+/* "Reading" is a running list that keeps getting updated, not a dated post -- hide its date in the blog listing */
+.quarto-post:has(a[href*="/reads/index.html"]) .listing-date { display: none; }
 .listing-description { color: var(--text-dim); font-size: 15px; }
 
 /* image gallery -- used by misc/places */
