@@ -11,7 +11,7 @@ pagetitle: "Samriddhi"
 <nav>
 <a href="/" class="active">About</a>
 <a href="/blog/">Blog</a>
-<a href="/misc/">Misc</a>
+<a href="/projects/">Projects</a>
 </nav>
 </header>
 
@@ -22,7 +22,8 @@ pagetitle: "Samriddhi"
 
 Hi! I'm Samriddhi, a Computer Science student at Carnegie Mellon University. I like systems, theory and ML.
 
-You can reach me at hello [at] sbhardwaj [dot] com.
+You can reach me at hello [at] sbhardwaj [dot] com.  
+[linkedin](https://www.linkedin.com/in/samriddhi-bhardwaj/) / [github](https://github.com/samriddb)
 
 </div>
 </div>
@@ -39,15 +40,7 @@ My favourite programming language is Rust 🦀. I also really enjoy GPU programm
 
 Here's a list of things I want to learn about more (in no particular order): computational biology, computer architecture, combinatorics, set theory, evolution, information theory, linguistics, and gen AI theory.
 
-## Projects
-
-**Optimizing Compiler** — C0 (subset of C) to LLVM and x86-64 in Rust; SSA, dataflow analysis, register allocation, SCCP, ADCE, inlining.
-
-**[Sequence-to-Graph Aligner](/s2g-aligner-paper.pdf)** — CUDA-accelerated DNA aligner. C++, CUDA.
-
-**Needle** — PyTorch-like autodiff library with GPU acceleration and graph optimizations. Python, C++, CUDA.
-
-**CarnegieGPT** — CMU resource retrieval system; won best campus experience at TartanHacks 2024. Python.
+Check out my [projects](/projects/)!
 
 ## Personal
 

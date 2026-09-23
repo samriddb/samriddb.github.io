@@ -9,6 +9,7 @@ project:
 website:
   site-url: "https://sbhardwaj.com"
   draft-mode: unlinked
+  favicon: favicon.svg
 
 format:
   html:

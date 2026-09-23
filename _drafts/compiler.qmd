@@ -1,0 +1,151 @@
+---
+title: "Optimizing Compiler"
+pagetitle: "Compiler · Samriddhi"
+date: 2026-06-01
+draft: true
+---
+
+<div class="wrap">
+<header>
+<div>
+<h1>Optimizing Compiler</h1>
+</div>
+<nav>
+<a href="/">About</a>
+<a href="/blog/">Blog</a>
+<a href="/projects/">Projects</a>
+</nav>
+</header>
+
+Built with [Viraj Shah](https://virajshah.vercel.app/). 
+
+I built an optimizing L4 compiler in Rust end to end: parsing and elaboration, typechecking with a string interner, lowering to an SSA IR tree, translation to LLVM-like SSA, 3-address x86 SSA, and a backend with dominator analysis, if-conversion, graph-coloring register allocation, SSA deconstruction, and AT&T x86 emission. On the optimization side, I implemented early IR cleanup (copy and constant propagation, folding, DCE), repeated LLVM scalar passes (CSE, arithmetic strength reduction, branch folding), function inlining, tail-call elimination, LICM, partial redundancy elimination, induction-variable strength reduction, scalar replacement, and final x86 peepholes. I tuned the pipeline with per-pass ablations on hot benchmarks. Our O1 pipeline reaches over 70% of optimized GCC.
+
+We built an end-to-end [C0](https://www.cs.cmu.edu/~c0/docs/c0-reference.pdf) to x86-64 compiler. C0 is a safe subset of C, used in the introductory programming [class](https://www.cs.cmu.edu/~15122/) at CMU
+
+[Read the report (PDF)](l4-compiler-report.pdf)
+
+<div class="tags" style="margin: 4px 0 32px;">
+<span class="chip">rust</span>
+<span class="chip">l4</span>
+<span class="chip">compilers</span>
+<span class="chip">ssa</span>
+<span class="chip">graph algorithms</span>
+<span class="chip">x86</span>
+<span class="chip">optimization</span>
+</div>
+
+The compiler passes code through five stages: source text &rarr; syntax tree &rarr; an SSA intermediate form (SSA just means each variable is assigned exactly once, which makes it much easier to reason about what a value is) &rarr; a simpler x86-like SSA form &rarr; final x86-64 machine code. Optimizations are applied along the way, but only when they're turned on (the "-O1" build below) — the unoptimized "-O0" build skips them.
+
+<figure style="margin: 28px 0;">
+<svg viewBox="0 0 700 300" width="100%" style="max-width: 700px; display: block; margin: 0 auto;" role="img" aria-label="Compiler pipeline diagram: Frontend (parse, elaborate, typecheck), Middle End (SSA IR with ir_opt and llvm_optim at -O1), Backend (ABI/CFG through register allocation to x86 codegen)">
+<defs>
+<marker id="pipe-arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
+<path d="M0,0 L7,3.5 L0,7 Z" fill="#607058"/>
+</marker>
+</defs>
+<text x="115" y="12" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#607058" text-anchor="middle">FRONTEND — read the code</text>
+<text x="339" y="12" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#607058" text-anchor="middle">MIDDLE END — optimize</text>
+<text x="563" y="12" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#607058" text-anchor="middle">BACKEND — machine code</text>
+<line x1="20" y1="8" x2="678" y2="8" stroke="none"/>
+<line x1="210" y1="12" x2="234" y2="12" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<line x1="434" y1="12" x2="458" y2="12" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<!-- Frontend column: x=20, w=190, boxes at y=40,88,136 -->
+<rect x="20" y="40" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="115" y="61" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="middle">read the source text</text>
+<line x1="115" y1="74" x2="115" y2="86" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="20" y="88" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="115" y="109" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="middle">build a syntax tree</text>
+<line x1="115" y1="122" x2="115" y2="134" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="20" y="136" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="115" y="157" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="middle">check types &amp; catch errors</text>
+<!-- Middle end column: x=244, w=190, boxes at y=40,88,136,184,232 -->
+<rect x="244" y="40" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="339" y="61" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="middle">convert to SSA form</text>
+<line x1="339" y1="74" x2="339" y2="86" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="244" y="88" width="190" height="34" rx="5" fill="#8c3050" fill-opacity="0.12" stroke="#8c3050" stroke-dasharray="3 2"/>
+<text x="339" y="105" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#1a2818" text-anchor="middle">early cleanup</text>
+<text x="339" y="117" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#607058" text-anchor="middle">constant folding, dead code</text>
+<line x1="339" y1="122" x2="339" y2="134" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="244" y="136" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="339" y="157" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="middle">lower to a simpler form</text>
+<line x1="339" y1="170" x2="339" y2="182" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="244" y="184" width="190" height="34" rx="5" fill="#8c3050" fill-opacity="0.12" stroke="#8c3050" stroke-dasharray="3 2"/>
+<text x="339" y="201" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#1a2818" text-anchor="middle">main optimizations</text>
+<text x="339" y="213" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#607058" text-anchor="middle">inlining, loop hoisting, etc.</text>
+<line x1="339" y1="218" x2="339" y2="230" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="244" y="232" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="339" y="253" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#1a2818" text-anchor="middle">convert to x86-like form</text>
+<!-- Backend column: x=468, w=190, boxes at y=40,88,136,184,232 -->
+<rect x="468" y="40" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="563" y="61" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="middle">map out control flow</text>
+<line x1="563" y1="74" x2="563" y2="86" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="468" y="88" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="563" y="105" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#1a2818" text-anchor="middle">branches &#8594; branch-free code</text>
+<text x="563" y="117" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#607058" text-anchor="middle">(if-conversion)</text>
+<line x1="563" y1="122" x2="563" y2="134" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="468" y="136" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="563" y="157" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="middle">assign CPU registers</text>
+<line x1="563" y1="170" x2="563" y2="182" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="468" y="184" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="563" y="205" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="middle">convert out of SSA form</text>
+<line x1="563" y1="218" x2="563" y2="230" stroke="#607058" stroke-width="1.5" marker-end="url(#pipe-arrow)"/>
+<rect x="468" y="232" width="190" height="34" rx="5" fill="#f1eeea" stroke="#e2dcd4"/>
+<text x="563" y="253" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#1a2818" text-anchor="middle">emit final x86-64 code</text>
+<!-- legend -->
+<rect x="20" y="278" width="14" height="14" rx="3" fill="#8c3050" fill-opacity="0.12" stroke="#8c3050" stroke-dasharray="3 2"/>
+<text x="40" y="289" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#607058">optimization pass — skipped when optimizations are off</text>
+</svg>
+<figcaption style="text-align:center; font-size:13px; color:#607058; margin-top:6px;">End-to-end pipeline. The dashed boxes are optimizations that only run in the "-O1" (optimized) build; everything else always runs.</figcaption>
+</figure>
+
+To see which of these optimizations actually mattered, we tried disabling each one individually and re-measured runtime (in CPU cycles) on one of our benchmark programs — a numeric, recursion-heavy test case that exercises most of the optimizer at once:
+
+<figure style="margin: 28px 0;">
+<svg viewBox="0 0 640 300" width="100%" style="max-width: 640px; display: block; margin: 0 auto;" role="img" aria-label="Bar chart: effect of disabling each optimization, in millions of CPU cycles. Strength reduction plus 822.2 million, scalar cleanup plus 170.6 million, function inlining minus 65.0 million, if-conversion minus 36.9 million, register allocation tweak plus 10.1 million, final x86 cleanup plus 3.2 million">
+<line x1="230" y1="14" x2="230" y2="280" stroke="#607058" stroke-width="1"/>
+<!-- row 1: strength reduction +822.2 -->
+<text x="220" y="41" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="end">strength reduction</text>
+<rect x="230" y="25" width="350" height="24" fill="#5a7d4f"/>
+<text x="586" y="41" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818">+822.2M</text>
+<!-- row 2: scalar cleanup +170.6 -->
+<text x="220" y="85" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="end">scalar cleanup</text>
+<rect x="230" y="69" width="72.6" height="24" fill="#5a7d4f"/>
+<text x="308.6" y="85" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818">+170.6M</text>
+<!-- row 3: function inlining -65.0 -->
+<text x="220" y="129" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="end">function inlining</text>
+<rect x="202.3" y="113" width="27.7" height="24" fill="#8c3050"/>
+<text x="196.3" y="129" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="end">-65.0M</text>
+<!-- row 4: if-conversion -36.9 -->
+<text x="220" y="173" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="end">if-conversion</text>
+<rect x="214.3" y="157" width="15.7" height="24" fill="#8c3050"/>
+<text x="208.3" y="173" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="end">-36.9M</text>
+<!-- row 5: regalloc prespill +10.1 -->
+<text x="220" y="217" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="end">register allocation tweak</text>
+<rect x="230" y="201" width="4.3" height="24" fill="#5a7d4f"/>
+<text x="240" y="217" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818">+10.1M</text>
+<!-- row 6: x86 peephole +3.2 -->
+<text x="220" y="261" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818" text-anchor="end">final x86 cleanup</text>
+<rect x="230" y="245" width="1.4" height="24" fill="#5a7d4f"/>
+<text x="238" y="261" font-family="JetBrains Mono, monospace" font-size="11" fill="#1a2818">+3.2M</text>
+<text x="405" y="296" font-family="JetBrains Mono, monospace" font-size="10.5" fill="#607058" text-anchor="middle">effect of disabling the pass, in millions of CPU cycles</text>
+</svg>
+<figcaption style="text-align:center; font-size:13px; color:#607058; margin-top:6px;">A positive bar means turning that optimization off made the program slower — i.e. it was helping. A negative bar means it was actually costing us cycles on this particular program.</figcaption>
+</figure>
+
+<ul style="font-size: 14px; color: var(--text-dim); line-height: 1.6; max-width: 480px; margin: -8px auto 32px; padding-left: 20px;">
+<li><strong style="color: var(--text);">strength reduction</strong> — replacing expensive multiply/divide with cheaper shifts and adds</li>
+<li><strong style="color: var(--text);">scalar cleanup</strong> — constant folding, copy propagation, dead-code removal</li>
+<li><strong style="color: var(--text);">function inlining</strong> — replacing a function call with the function's own body, to remove call overhead</li>
+<li><strong style="color: var(--text);">if-conversion</strong> — turning small branches into branch-free instructions, so the CPU doesn't have to guess which way a branch goes</li>
+<li><strong style="color: var(--text);">register allocation tweak</strong> — a heuristic for choosing which values live in fast CPU registers vs. slower memory</li>
+<li><strong style="color: var(--text);">final x86 cleanup</strong> — small local rewrites to the generated assembly, like removing a jump to the very next instruction</li>
+</ul>
+
+<p style="margin-top: 40px;"><a href="/projects/">&larr; back to projects</a></p>
+
+<footer>
+Made with <a href="https://quarto.org/">Quarto</a>.
+</footer>
+
+</div>

@@ -218,7 +218,7 @@ h3:hover .heading-anchor { visibility: visible; }
 .quarto-post:has(a[href*="/reads/index.html"]) .listing-date { display: none; }
 .listing-description { color: var(--text-dim); font-size: 15px; }
 
-/* image gallery -- used by misc/places */
+/* image gallery -- used by _drafts/places */
 .gallery-frame {
   display: flex;
   justify-content: center;

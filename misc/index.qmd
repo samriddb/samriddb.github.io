@@ -10,17 +10,9 @@ pagetitle: "Misc · Samriddhi"
 <nav>
 <a href="/">About</a>
 <a href="/blog/">Blog</a>
-<a href="/misc/" class="active">Misc</a>
+<a href="/projects/">Projects</a>
 </nav>
 </header>
-
-<div class="card">
-<h3><a href="/misc/places/">Places</a></h3>
-</div>
-
-<div class="card">
-<h3><a href="http://inkright.sbhardwaj.com/" target="_blank" rel="noopener noreferrer">InkRight ↗</a></h3>
-</div>
 
 <footer>
 Made with <a href="https://quarto.org/">Quarto</a>.
